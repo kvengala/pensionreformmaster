@@ -1,0 +1,36 @@
+.bar {
+  fill: #06c;
+}
+.bbar {
+  fill: #c33;
+}
+.sbar {
+  fill-opacity: 0;
+  stroke:#3c3;
+  stroke-width:1;
+}
+.cbar {
+  fill: #3c3;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}
+.future{
+    opacity:.5;
+}

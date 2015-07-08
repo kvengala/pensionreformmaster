@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Jasmine Spec Runner</title>
+  <script type="text/javascript">
+    window.onerror = function(msg,url,line) {
+      if (document.head) {
+        var jserror = document.head.getAttribute('jmp_jserror') || '';
+        if (jserror) {
+          jserror += ':!:';
+        }
+        jserror += msg;
+        document.head.setAttribute('jmp_jserror',jserror);
+      }
+    };
+  </script>
+  <link rel="stylesheet" type="text/css" href="/webjars/jasmine/2.0.0/jasmine.css"/>
+  <script type="text/javascript" src="/webjars/jasmine/2.0.0/jasmine.js"></script>
+  <script type="text/javascript" src="/webjars/jasmine/2.0.0/jasmine-html.js"></script>
+  <script type="text/javascript" src="/classpath/lib/boot.js"></script>
+
+  <script type="text/javascript">
+    window.onload = jasmine.boot;
+  </script>
+  <script type="text/javascript" src="spec/lib/boot.js"></script>
+  <script type="text/javascript" src="src/401KModel.js"></script>
+  <script type="text/javascript" src="src/COLA.js"></script>
+  <script type="text/javascript" src="src/Environment.js"></script>
+  <script type="text/javascript" src="src/Model.js"></script>
+  <script type="text/javascript" src="src/PensionCalculator.js"></script>
+  <script type="text/javascript" src="src/PensionVars.js"></script>
+  <script type="text/javascript" src="src/Person.js"></script>
+  <script type="text/javascript" src="src/SERSModel.js"></script>
+  <script type="text/javascript" src="src/SalaryHistory.js"></script>
+  <script type="text/javascript" src="src/dataItem.js"></script>
+  <script type="text/javascript" src="src/element_mover.js"></script>
+  <script type="text/javascript" src="src/systems.mortality.js"></script>
+  <script type="text/javascript" src="spec/calc_ind_pension.spec.js"></script>
+  <script type="text/javascript" src="spec/colaTest.js"></script>
+  <script type="text/javascript" src="spec/controllerTest.spec.js"></script>
+  <script type="text/javascript" src="spec/modelTest.js"></script>
+  <script type="text/javascript" src="spec/personTestSpec.js"></script>
+
+</head>
+<body>
+  <script type="text/javascript">
+    if(window.location.href.indexOf("ManualSpecRunner.html") !== -1) {
+      document.body.appendChild(document.createTextNode("Warning: Opening this HTML file directly from the file system is deprecated. You should instead try running `mvn jasmine:bdd` from the command line, and then visit `http://localhost:8234` in your browser. "))
+    }
+  </script>
+</body>
+</html>
